@@ -1,0 +1,197 @@
+                .bg-light {
+                    background: rgba(0, 0, 0, 0.87)!important;
+                    display: flex;
+                }
+                
+                .bg-light a {
+                    color: #fff!important;
+                    margin: auto 10px;
+                }
+                
+                #navbarNav a::before {
+                    position: absolute;
+                    content: "";
+                    border-radius: 50%;
+                    width: 5px;
+                    height: 5px;
+                    transform: translateY(23px);
+                    background: #fff;
+                    opacity: 0;
+                }
+                
+                #navbarNav a:hover::before {
+                    animation: .5s;
+                    animation-name: estirar;
+                    animation-fill-mode: forwards;
+                }
+                
+                @keyframes estirar {
+                    from {
+                        opacity: 0;
+                        transform: scale(0);
+                    }
+                    to {
+                        opacity: .5;
+                        transform: scale(5);
+                    }
+                }
+                
+                .navbar-light .navbar-toggler-icon {
+                    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+                }
+                
+                .navbar-brand img {
+                    width: 75px;
+                    height: 75px;
+                }
+                
+                #navbarNav {
+                    justify-content: center;
+                }
+                /*carrucel*/
+                
+                .carousel-item {
+                    background-image: url("../img/fondos1.jpg");
+                    min-height: 400px;
+                    background-position: 2cm 50%;
+                    background-size: 200% 200%;
+                    animation: 1s;
+                    animation-name: fondo-mov;
+                    animation-fill-mode: forwards;
+                }
+                
+                @keyframes fondo-mov {
+                    from {
+                        background-size: 200% 200%;
+                    }
+                    to {
+                        background-size: 100% 100%;
+                    }
+                }
+                
+                .eslogan h1 {
+                    font-size: 75px;
+                    text-align: center;
+                    color: #fff;
+                    font-weight: bold;
+                    text-shadow: 1px 1px 10px #666;
+                    margin-top: -1px;
+                    padding-top: 100px;
+                    animation: 1s;
+                    animation-name: mover-derecha;
+                    animation-fill-mode: forwards;
+                }
+                
+                @keyframes mover-derecha {
+                    from {
+                        opacity: 0;
+                        transform: translateX(-100px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateX(0px);
+                    }
+                }
+                
+                .eslogan h1::before {
+                    position: absolute;
+                    content: "";
+                    text-shadow: 1px 1px 10px #666;
+                    width: 2.5px;
+                    height: 2.5px;
+                    transform: translateY(100px);
+                    background: #fff;
+                    opacity: 1;
+                    animation: .9s;
+                    animation-delay: .25s;
+                    animation-name: efecto-banner;
+                    animation-fill-mode: forwards;
+                }
+                
+                .eslogan h1::after {
+                    position: absolute;
+                    content: "";
+                    text-shadow: 1px 1px 10px #666;
+                    width: 10px;
+                    height: 5px;
+                    transform: translateY(96px) translatex(-600px);
+                    background: #fff;
+                    opacity: 1;
+                    animation: 1.2s;
+                    animation-name: efecto-banner2;
+                    animation-fill-mode: forwards;
+                }
+                
+                @keyframes efecto-banner2 {
+                    0% {
+                        opacity: 1;
+                    }
+                    50% {
+                        opacity: 1;
+                        transform: translateY(96px) translatex(-20px);
+                    }
+                    60% {
+                        opacity: 1;
+                        transform: translateY(96px) translatex(-20px);
+                    }
+                    70% {
+                        opacity: 1;
+                        transform: translateY(96px) translatex(-20px);
+                    }
+                    80% {
+                        opacity: 1;
+                        transform: translateY(96px) translatex(-20px);
+                    }
+                    90% {
+                        opacity: 1;
+                        transform: translateY(96px) translatex(-20px);
+                    }
+                    100% {
+                        transform: translateY(96px) translatex(-20px);
+                        opacity: 0;
+                    }
+                }
+                
+                @keyframes efecto-banner {
+                    0% {
+                        opacity: 0;
+                    }
+                    25% {
+                        opacity: 1;
+                        width: 520px;
+                    }
+                    50% {
+                        opacity: 1;
+                        transform: translate(-100%, -100%) translateX(520px) translateY(100px);
+                    }
+                    100% {
+                        opacity: 0;
+                        transform: translate(-100%, -100%) translateX(520px) translateY(100px);
+                    }
+                }
+                
+                .eslogan p {
+                    text-align: center;
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 18px;
+                    opacity: 0;
+                    margin-top: 30px;
+                    margin-bottom: 100px;
+                    text-shadow: 1px 1px 10px #666;
+                    animation: 1s;
+                    animation-delay: 1s;
+                    animation-name: mover-abajo;
+                    animation-fill-mode: forwards;
+                }
+                
+                @keyframes mover-abajo {
+                    from {
+                        opacity: 0;
+                        transform: translateY(-50px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0px);
+                    }
+                }
